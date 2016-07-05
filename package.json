@@ -21,6 +21,7 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
+    "chrono-node": "^1.2.4",
     "nlp_compromise": "^6.4.1",
     "sentiment": "^1.0.6"
   }

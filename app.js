@@ -7,4 +7,4 @@ import sayHello from './sayHello';
 const her = new Her()
 
 her.intent(greetings, sayHello)
-her.listen('hey there')
+her.listen('I need an appointment with the dentist tomorrow at 2pm in London')
