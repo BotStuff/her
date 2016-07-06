@@ -9,12 +9,12 @@ import tokens from './tokens';
 import relations from './relations';
 // import relations from './relations';
 import sentiment from './sentiment';
+import cities from 'smart-city-finder';
 
 export default (state) => {
   debugger;
+  console.log(cities);
   // find by city || state || zip code
   const factory = compose(tokens, sentiment, relations);
   return factory(state);
 }
-
-cities.filter(function (city) { return city.name.match('Albuquerque') });

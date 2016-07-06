@@ -2,9 +2,12 @@
   "name": "her",
   "version": "1.0.0",
   "description": "learning bot",
-  "main": "index.js",
+  "main": "lib/her.js",
   "author": "Manuel Di Cristo",
   "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir lib",
+    "prepublish": "npm run build",
+    "test": "mocha",
     "start": "node index.js",
     "debug": "node debug index.js"
   },
@@ -21,8 +24,10 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
+    "babel-polyfill": "^6.9.1",
     "chrono-node": "^1.2.4",
     "nlp_compromise": "^6.4.1",
-    "sentiment": "^1.0.6"
+    "sentiment": "^1.0.6",
+    "smart-city-finder": "^1.0.6"
   }
 }

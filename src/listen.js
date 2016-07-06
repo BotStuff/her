@@ -1,7 +1,7 @@
 'use strict';
 
-import { compose, timeout } from '../lib/helpers';
-import factoryProcessor from '../lib/processor';
+import { compose, timeout } from './helpers';
+import factoryProcessor from './processor';
 
 export default (state) => ({
   listen: (sentence, ms) => {
@@ -9,7 +9,7 @@ export default (state) => ({
       state.sentence = sentence.toLowerCase();
 
       if (ms) timeout(reject, ms);
-      // populate analyzer and check if passes context rules
+      
       const factory = compose(factoryProcessor);
       factory(state)
       .then((stuff) => {
