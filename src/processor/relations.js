@@ -2,7 +2,7 @@
 
 import Compromise from 'nlp_compromise';
 import Chrono from 'chrono-node';
-// -- Internal
+
 const TERMS_RELATIONS = {
   person: 'subject',
   adverb: 'adverb',
@@ -38,7 +38,6 @@ export default (state) => {
   return (state);
 };
 
-// -- Private methods
 const extractRelation = (tag, term, previous) => {
   let relation = {};
   let text = term.normal || term.text;
