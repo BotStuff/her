@@ -1,19 +1,6 @@
-var _compose = require('./compose');
+'use strict';
 
-Object.defineProperty(exports, 'compose', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_compose).default;
-  }
-});
-
-var _timeout = require('./timeout');
-
-Object.defineProperty(exports, 'timeout', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_timeout).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+export { default as compose } from './compose';
+export { default as factoryIntents } from './factoryIntents';
+export { default as factoryActions } from './factoryActions';
+export { default as timeout } from './timeout';

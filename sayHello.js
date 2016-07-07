@@ -1,4 +1,4 @@
 export default (state) => {
-  debugger;
+  state.answer = { value: 'Hello world!' };
   return (state);
 }
