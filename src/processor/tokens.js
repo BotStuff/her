@@ -1,8 +1,5 @@
-'use strict';
-
-import Compromise from 'nlp_compromise';
-
 export default (state) => {
-  state.tokens = Compromise.text(state.sentence).root().split(' ');
+  state.tokens = state.sentence.split(' ');
+  state.sentenceLength = state.sentence.length;
   return (state);
 };

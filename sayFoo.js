@@ -1,4 +1,4 @@
 export default (state) => {
-  state.answer = 'Hello!'
+  state.answer += ' Foo Foo Foo !';
   return state;
 }

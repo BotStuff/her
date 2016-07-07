@@ -9,14 +9,11 @@ export default (state) => ({
     return new Promise((resolve, reject) => {
       if (ms) timeout(reject, ms);
       state.sentence = sentence.toLowerCase();
-
       const factory = compose(factoryProcessor, factoryIntents);
-      factory(state)
-      .then((stuff) => {
-        // factoryProcessor breaks down
-        // intents checks against rules, finds contexts and returns answer
-        debugger;
+      return factory(state)
+      .then((state) => {
+        state.answer ? resolve(state.answer) : reject(false);
       })
     });
   }
-})
+});
