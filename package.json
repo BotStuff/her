@@ -28,6 +28,6 @@
     "chrono-node": "^1.2.4",
     "nlp_compromise": "^6.4.1",
     "sentiment": "^1.0.6",
-    "smart-city-finder": "^1.1.2"
+    "smart-city-finder": "^1.1.3"
   }
 }
