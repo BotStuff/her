@@ -14,3 +14,4 @@ export default async (state) => {
   const categories = state.categories.map(cateogry => isMatch(state, cateogry.name, cateogry.terms));
   return await Promise.all(categories);
 }
+m
